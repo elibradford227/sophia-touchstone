@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="assets/media/logo.png" alt="North Star Bakery logo" />
+        <h1>Welcome to North Star Bakery</h1>
+        <p>At 123 Bakery Lane</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p>What we are known for: artisan breads, handcrafted pastries, friendly service, and local ingredients fresh every day.</p>
+        <ul>
+          <li>Monday - Friday: 7:00 AM - 8:00 PM</li>
+          <li>Saturday: 8:00 AM - 6:00 PM</li>
+          <li>Sunday: 9:00 AM - 4:00 PM</li>
+        </ul>
+      </header>
+      <main>
+        <section>
+          <h2>Featured item of the week:</h2>
+          <p>Delicious cinnamon rolls!</p>
+          <audio controls>
+            <source src="assets/media/audio/bakery_welcome_c.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element. Please visit us or contact us to hear our welcome message.
+          </audio>
+          <video controls width="100%" preload="metadata">
+            <source src="assets/media/video/bakery-behind-scenes_c.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video. Visit us in person or contact us for more information.
+          </video>
+        </section>
+        <section>
+          <h2>Bakery Feature</h2>
+          <p>Explore one of our bakery highlights with an image optimized for each screen size.</p>
+          <figure>
+            <picture>
+              <source srcset="assets/media/images/bakery-feature-small_c.png" media="(max-width: 600px)" />
+              <img src="assets/media/images/bakery-feature-large_c.png" alt="Bakery feature display of freshly baked bread and pastries" />
+            </picture>
+            <figcaption>Our bakery feature, shown in a responsive image format.</figcaption>
+          </figure>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2026 Eli Bradford</p>
+      </footer>
+    </div>
+  </body>
+</html>
