@@ -162,6 +162,8 @@ fieldset {
 fieldset div {
   display: flex;
   flex-direction: column;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-accent);
 }
 
 legend {
