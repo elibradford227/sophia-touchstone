@@ -34,6 +34,7 @@
               <div>
                 <label for="name">Name</label><br />
                 <input type="text" id="name" name="name" required maxlength="100" />
+                <span id="name-error" class="error-message"></span>
               </div>
               <div>
                 <label for="email">Email</label><br />
@@ -54,6 +55,7 @@
               <div>
                 <label for="item-details">Item Details</label><br />
                 <textarea id="item-details" name="item-details" rows="4" required maxlength="500" placeholder="Describe the item you want or the question you have."></textarea>
+                <span id="item-details-error" class="error-message"></span>
               </div>
               <div>
                 <label for="pickup-date">Preferred Pickup Date</label><br />
@@ -86,5 +88,6 @@
         <p>&copy; 2026 North Star Bakery</p>
       </footer>
     </div>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
