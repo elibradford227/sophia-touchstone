@@ -8,6 +8,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const nameError = document.getElementById("name-error");
   const itemDetailsError = document.getElementById("item-details-error");
 
+  const fields = document.querySelectorAll(
+    "#name, #email, #phone, #request-type, #item-details, #pickup-date, #allergy-notes"
+  );
+
+  fields.forEach(function (field) {
+    const savedValue = localStorage.getItem(field.id);
+    
+    if (savedValue) {
+      field.value = savedValue;
+    }
+
+    field.addEventListener("input", function () {
+      localStorage.setItem(field.id, field.value);
+    });
+  });
+
   form.addEventListener("submit", function (event) {
     let isValid = true;
 
@@ -29,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!isValid) {
       event.preventDefault();
+      return;
     }
+
+    fields.forEach(function (field) {
+      localStorage.removeItem(field.id);
+    });
   });
 });
